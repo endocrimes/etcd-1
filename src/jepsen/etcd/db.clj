@@ -71,10 +71,10 @@
        :pidfile pidfile
        :chdir   dir}
       binary
-      :--enable-v2
       :--log-outputs                  :stderr
       :--logger                       :zap
       :--name                         node
+      :--experimental-initial-corrupt-check
       :--listen-peer-urls             (s/peer-url   node)
       :--listen-client-urls           (s/client-url node)
       :--advertise-client-urls        (s/client-url node)
